@@ -49,6 +49,12 @@ app.get('/about', (req, resp) => {
     });
 });
 
+app.get('/projects', (req, resp) => {
+    resp.render('projects.hbs', {
+        wellcomeMsg: 'Portfolio page here!',
+    });
+});
+
 app.get('/bad', (req, resp) => {
     resp.send({
         error: 'Watafak error!'
